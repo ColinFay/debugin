@@ -1,0 +1,15 @@
+Name: Debug
+Description: Debug a function
+Binding: debug_fun
+Interactive: false
+
+Name: Debug Once
+Description: Debug Once a function
+Binding: debug_once
+Interactive: false
+
+Name: Undebug
+Description: Debug a function
+Binding: undebug_fun
+Interactive: false
+

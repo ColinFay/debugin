@@ -1,0 +1,16 @@
+Package: debugin
+Title: An RStudio Addin for Debugging
+Version: 0.0.0.9000
+Authors@R: person("Colin", "Fay", email = "contact@colinfay.me", role = c("aut", "cre"))
+Description: A wrapper around R functions for debugging, accessible as RStudio addins. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Imports: attempt,
+    rstudioapi, 
+    crayon
+RoxygenNote: 6.0.1
