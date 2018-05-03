@@ -4,20 +4,27 @@
 debugin
 =======
 
-As developpers, we debug. A lot. One way to do it in R is to wrap your
-functions in `debug()`, and run it again. And then we forget we have
-`debug()` it, and need to `undebug()` them. Or we can also call
-`debugonce()`.
+Developpers debug. A lot. One way to do it in R is to wrap your
+functions in `debug()`, and run it again. And then we have `debug()` it,
+and need to `undebug()` them. Or we can also call `debugonce()`.
 
 Debug functions
 ---------------
 
-As developpers, we like to be efficient. Writing debug and undebug can
-break your workflow. So why not doing it with a keyboard shortcut?
-That’s what {debugin} does: you highlight a function in your RStudio
-windows, and the addin does the job of debug, undebug, or debugonce.
+Developpers like to be efficient. Writing debug and undebug can break
+your workflow. So why not doing it with a keyboard shortcut?
+
+That’s what `{debugin}` does: you highlight a function in your RStudio
+windows, and the addin does the job of `debug()`, `undebug()`, or
+`debugonce()`.
 
 > Note: using debugin is better with keyboard shortcuts
+
+The addin allows :
+
+-   `debug()`
+-   `debugonce()`
+-   `undebug()`
 
 Debug with message
 ------------------
@@ -34,7 +41,7 @@ undebug_with_message(a)
 ```
 
 Comparing to base function, these functions does nothing more than
-printing a message to the user.
+printing a message to the user. Hence the use of an addin.
 
 trace\_back
 -----------
@@ -42,8 +49,8 @@ trace\_back
 With base R, the traceback is printed in reverse order (from the last
 call to the first). With `trace_back()`, you get the call stack in the
 order the calls were made. Plus, the first call is printed in blue, and
-the call causing the error in printed in red, if your R session support
-ANSI colors.
+the call causing the error in printed in red (if your R session support
+ANSI colors).
 
 ``` r
 my_fun <- function(x){
