@@ -62,6 +62,14 @@ trace_back()
 
 ![](img/color_traceback.png)
 
+Browse / Unbrowse
+-----------------
+
+Unbrowse turns all the `browser()` to `#browser()`, Browse does the
+opposite.
+
+![](img/unbrowse.gif)
+
 Please note that this project is released with a [Contributor Code of
 Conduct](CONDUCT.md). By participating in this project you agree to
 abide by its terms.

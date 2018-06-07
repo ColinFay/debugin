@@ -1,3 +1,13 @@
+Name: browse
+Description: Turn on all browser()
+Binding: browse
+Interactive: false
+
+Name: Unbrowse
+Description: Turn on off browser()
+Binding: unbrowse
+Interactive: false
+
 Name: Debug
 Description: Debug a function
 Binding: debug_fun
