@@ -1,18 +1,18 @@
 debug_fun <- function(){
   a <- rstudioapi::getSourceEditorContext()
-  rstudioapi::sendToConsole(paste0("debug_with_message(", a$selection[[1]]$text, ")"),
+  rstudioapi::sendToConsole(paste0("debugin::debug_with_message(", a$selection[[1]]$text, ")"),
                             execute = TRUE)
 }
 
 undebug_fun <- function(){
   a <- rstudioapi::getSourceEditorContext()
-  rstudioapi::sendToConsole(paste0("undebug_with_message(", a$selection[[1]]$text, ")"),
+  rstudioapi::sendToConsole(paste0("debugin::undebug_with_message(", a$selection[[1]]$text, ")"),
                             execute = TRUE)
 }
 
 debug_once <- function(){
   a <- rstudioapi::getSourceEditorContext()
-  rstudioapi::sendToConsole(paste0("debug_once_with_message(", a$selection[[1]]$text, ")"),
+  rstudioapi::sendToConsole(paste0("debugin::debug_once_with_message(", a$selection[[1]]$text, ")"),
                             execute = TRUE)
 }
 
